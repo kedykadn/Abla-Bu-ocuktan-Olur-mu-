@@ -1,0 +1,109 @@
+h1 {
+  text-align: center;
+  text-decoration: double;
+  color:#b44a4a
+}
+
+
+
+/* Genel Sayfa Stili */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Konteyner Stili */
+.container {
+  background: #f294b3;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Soruların Yazı Stili */
+.container p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Radio Buton Stili */
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 5px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+form input[type="radio"] {
+  margin-right: 10px;
+}
+
+form label:hover {
+  background: #f0f0f0;
+  color: #3ea22d;
+}
+
+/* Buton Stili */
+#calculate-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #b13232bf;
+  background: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#calculate-button:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Sonuç Mesajı Stili */
+#result {
+  margin: 20px auto;
+  padding: 15px;
+  max-width: 600px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  background: #b44a4a, ;
+  border-radius: 8px;
+  border: 2px solid #f5f829;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  .container {
+      margin: 10px auto;
+      padding: 15px;
+  }
+
+  #calculate-button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+  }
+
+  #result {
+      font-size: 1rem;
+  }
+}
